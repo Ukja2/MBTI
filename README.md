@@ -44,9 +44,13 @@ currentQuestionIndex가 questions 배열 길이보다 작다면 ShowQuestion()�
 
 - 작동 방식:
 (1) Score 객체를 생성하여 각 성향 유형의 점수를 초기화한다.
+
 (2) answers 배열을 `forEach`를 통해 순차적으로 순회하면서 동시에 type 변수에 question[index]를 할당하여 현재의 배열 위치에 맞춰 type도 순차적으로 진행된다.
+
 (3) 위의 현재 type에 따라 현재의 배열에 저장된 답변을 조건문을 통해 해당 성향 유형(E/I, N/S, T/F, J/P)의 점수를 증가시킨다.
+
 (4) 점수가 높은 성향에 따라 최종 MBTI 결과 문자열을 구성한다.
+
 (5) ResultText 요소에 최종 MBTI 결과를 표시하고, createImage(FinalResult) 함수를 호출하여 결과에 맞는 이미지를 화면에 출력한다.
 
 5. `Show_NextPage()`
